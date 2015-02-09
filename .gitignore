@@ -1,0 +1,9 @@
+.classpath
+!/.project
+.project
+.settings
+target
+overlays/
+pom.xml.versionsBackup
+*.log
+bin/
