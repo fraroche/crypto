@@ -1,23 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>fr.si2m.socle.security</groupId>
-	<artifactId>crypt-util-cli</artifactId>
+	<groupId>fr.nta.socle.security</groupId>
+	<artifactId>crypt-util</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<name>SOC</name>
 	<scm>
-		<url>http://lana2029:8080/svn/arch_java_si2m/crypt-util-cli/trunk</url>
-		<connection>scm:svn:http://lana2029:8080/svn/arch_java_si2m/crypt-util-cli/trunk</connection>
-		<developerConnection>scm:svn:http://lana2029:8080/svn/arch_java_si2m/crypt-util-cli/trunk</developerConnection>
+		<url>https://github.com/fraroche/crypto</url>
+		<connection>scm:git:https://github.com/fraroche/crypto</connection>
+		<developerConnection>scm:git:https://github.com/fraroche/crypto</developerConnection>
 	</scm>
-	<distributionManagement>
-		<repository>
-			<id>releases</id>
-			<url>http://vliql-usil.si2m.tec:8081/nexus/content/repositories/releases/</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshots</id>
-			<url>http://vliql-usil.si2m.tec:8081/nexus/content/repositories/snapshots/</url>
-		</snapshotRepository>
 	</distributionManagement>
 
 	<build>
@@ -31,10 +22,10 @@
 						<manifestEntries>
 							<Specification-Title>${pom.artifactId}</Specification-Title>
 							<Specification-Version>N/A</Specification-Version>
-							<Specification-Vendor>MALAKOFF-MEDERIC (should be ...)</Specification-Vendor>
+							<Specification-Vendor>RFC4880</Specification-Vendor>
 							<Implementation-Title>${pom.name}</Implementation-Title>
 							<Implementation-Version>${pom.version}</Implementation-Version>
-							<Implementation-Vendor>SI2M</Implementation-Vendor>
+							<Implementation-Vendor>NTA</Implementation-Vendor>
 						</manifestEntries>
 					</archive>
 				</configuration>
@@ -90,15 +81,10 @@
 <!-- 		</dependency> -->
 		<dependency>
 			<groupId>org.bouncycastle</groupId>
-			<artifactId>bcpg-jdk15on-si2m</artifactId>
+			<artifactId>bcpg-jdk15on</artifactId>
 			<version>1.51</version>
 		</dependency>
 		
-		<dependency>
-			<groupId>fr.si2m.csnt.socle</groupId>
-			<artifactId>exception-si2m</artifactId>
-			<version>1.0.2</version>
-		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
